@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>たし算クイズ</title>
+</head>
+<body>
+  <div>
+    <h1>けいさんクイズ</h1>
+    <button onclick="main('たしざん')" class="menu-btn" style="background-color: firebrick">たしざん</button>
+    <button onclick="main('ひきざん')" class="menu-btn" style="background-color: blueviolet;">ひきざん</button>
+  </div>
+  <p>せいかいしたかず <span id="correct">0</span></p>
+  <h2 id="question">
+    なんもんせいかいできるかな？
+  </h2>
+  <input type="number" id="answer" min="0"/>
+  <button onclick="checkAnswer()">こたえあわせ</button>
+  <p id="result"></p>
+  <!-- <button onclick="main()">つぎのもんだい</button> -->
+  <script src="./main.js"></script>
+  </body>
+</html>
